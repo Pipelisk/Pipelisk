@@ -4,3 +4,55 @@
    padding: 500px;
 }
    */
+
+   h1 {
+      color:antiquewhite
+   }
+
+   a {
+      color: gold; !important
+   }
+
+   form{
+      color: whitesmoke
+   }
+
+   fieldset {
+      color:gold
+   }
+
+   /** botones nav **/
+.btn-dynamic{
+   display: block;
+   width: auto;
+   border: 3px solid #f80ab1;
+   text-decoration: none;
+   color: #dd0303;
+   padding: 6px 10x;
+   margin-top: 5px;
+   text-align: center;
+   position: relative;
+}
+
+.btn-dynamic::before{
+   content:'';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background-color: rgb(12, 136, 99);
+   z-index: -1;
+
+   left: 100%;
+   width: 0%;
+   transition: .3s;
+}
+
+.btn-dynamic:hover::before{
+   left: 0%;
+   width: 100%;
+
+}
+
+/* https://www.youtube.com/watch?v=xptxTw8x24M
